@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDeditor</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="markdown.css">
+</head>
+<body class="bg-gray-100 font-sans flex flex-col items-center p-6 h-screen">
+  <h1 class="text-4xl font-bold text-blue-600 mb-6">MarkDown Editor</h1>
+  <div class="editor-container w-full flex-1 flex space-x-4">
+    <!-- Left Pane: Textarea -->
+    <textarea
+      id="markdown-editor"
+      class="w-1/2 p-4 border border-gray-300 rounded-lg shadow-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 h-full"
+      placeholder="Write your markdown here..."
+    ></textarea>
+
+    <!-- Right Pane: Preview -->
+    <div
+      id="markdown-preview"
+      class="w-1/2 p-4 border border-gray-300 rounded-lg shadow-sm overflow-y-auto bg-white h-full"
+    ></div>
+  </div>
+  <div class="file-controls mt-6 flex space-x-4">
+    <input
+      type="text"
+      id="file-name"
+      class="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+      placeholder="File name"
+    />
+    <button
+      onclick="saveFile()"
+      class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+    >
+      Save
+    </button>
+    <button
+      onclick="openFile()"
+      class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+    >
+      Open
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
