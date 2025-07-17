@@ -1,85 +1,99 @@
-# 🖋️ Markdown Editor with Preview
+<h1 align="center">🖋️ Markdown Editor with Preview</h1>
 
-A full-stack Markdown editor built with **Node.js**, **Express**, **MongoDB**, and vanilla **HTML**, **CSS**, and **JavaScript**. The editor allows real-time Markdown preview, file saving, and loading from a MongoDB database. 🚀
+<p align="center">
+  <i>Real-time markdown editor with live preview and theme toggle, backed by Node, Express, and MongoDB.</i>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20Tailwind%20%7C%20JS-blue" />
+  <img src="https://img.shields.io/badge/Backend-Node.js%20%7C%20Express-brightgreen" />
+  <img src="https://img.shields.io/badge/Database-MongoDB-yellowgreen" />
+  <img src="https://img.shields.io/badge/Markdown-Markdown%20Renderer-lightgrey" />
+</p>
 
 ## ✨ Features
 
-- **Real-time Markdown Preview** 👀
-- **Save and Open Markdown files** 💾
-- **Beautiful Dracula Theme (default)** 🦇
-- **Optional Light Mode** ☀️
-- **Theme persistence using localStorage** 💾
-- **Simple and lightweight implementation** 🪶
+- ✅ Real-time Markdown preview as you type
+- ✅ Save and retrieve Markdown files from MongoDB
+- ✅ Dracula theme + optional light mode toggle
+- ✅ Theme persistence via `localStorage`
+- ✅ Clean, responsive, and minimal UI
 
-## 🎨 Themes
+## 🏷️ Tech Stack
 
-- **Dracula Dark Theme** (default) - Elegant purple/dark color scheme
-- **Light Mode** - Clean white theme for daytime use
-- **Toggle between themes with one click** 🔄
+| Layer        | Tech Stack                          |
+| ------------ | ----------------------------------- |
+| **Frontend** | HTML, CSS, Tailwind CSS, JavaScript |
+| **Backend**  | Node.js, Express                    |
+| **Database** | MongoDB                             |
+| **Markdown** | Marked.js                           |
 
-## 🛠️ Tech Stack
+## 📺 Demo
 
-- **Frontend**: HTML, CSS, Tailwind CSS, JavaScript
-- **Backend**: Node.js, Express
-- **Database**: MongoDB
-- **Markdown Rendering**: Marked.js
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/66294992-d465-43f1-a5e9-c067e0addbe5" alt="Markdown Editor Screenshot" width="80%" />
+</p>
+
+🔗 **Live Demo →** *([https://mdeditor.onrender.com](https://mdeditor.onrender.com))*
+
+## 🧪 Test Usage
+
+This app does not require login. Just run and use directly. You can:
+
+- ✍️ Write Markdown on the left
+- 👀 See preview on the right
+- 💾 Save documents by file name
+- 📂 Open them back with the same name
+- 🌙 Switch between Dracula and Light theme
 
 ## 🛠️ Installation
 
-1. Clone the repository:
+```bash
+# Clone the repo
+git clone https://github.com/SharadJ19/mdeditor.git
+cd mdeditor
 
-   ```bash
-   git clone https://github.com/SharadJ19/mdeditor
-   cd mdeditor
-   ```
+# Install dependencies
+npm install
 
-2. Install dependencies:
+# Create a .env file and configure your MongoDB URI
+# Example:
+# MONGO_URI=mongodb+srv://<your_db>
 
-   ```bash
-   npm install
-   ```
+# Start the server
+node server.js
+```
 
-3. Set up your MongoDB atlas DB or use mine in `.env` file ;>
+Visit [`http://localhost:3000`](http://localhost:3000) in your browser.
 
-4. Start the server:
+## 👨‍💻 Author
 
-   ```bash
-   node server.js
-   ```
+<table>
+<tr>
+  <td align="center">
+    <a href="https://sharad.is-a.dev/">
+      <img src="https://avatars.githubusercontent.com/u/85397332?v=4" width="100px;" alt="Sharad's Avatar"/>
+      <br />
+      <sub><b>Sharad Chandel</b></sub>
+    </a>
+  </td>
+</tr>
+</table>
 
-5. Visit http://localhost:3000 in your browser to start using it 🌐
+📫 [Email](mailto:sharadchandel2005@gmail.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/sharadchandel2005/)
+🌐 [Portfolio](https://sharad.is-a.dev/)
 
-## 🎯 Usage
+## 📝 License
 
-### Basic Editor Functions
+🧾 This project is licensed under the **GNU General Public License v3.0**.
+See the [LICENSE](./LICENSE) file for full legal details.
 
-1. **Write Markdown** in the left panel ✍️
+## 🤝 Contribution
 
-   - All standard Markdown syntax is supported
-   - See real-time preview in the right panel
+Pull requests are welcome.
+For major changes, open an issue first to discuss the idea.
 
-2. **Save Files** 💾
-
-   - Enter a filename in the input field
-   - Click "Save" to store in MongoDB
-
-3. **Open Files** 📂
-   - Enter the filename you saved previously
-   - Click "Open" to load your Markdown
-
-### Theme Customization
-
-1. **Toggle Between Themes** 🔄
-
-   - Click the "Light Mode" button (top-right) to switch to light theme
-   - Click "Dark Mode" to return to Dracula theme
-
-2. **Theme Persistence** 💾
-   - Your theme preference is automatically saved
-   - Will remember your choice when you return
-
-## 📸 Screenshot
-
-![mdeditor](https://github.com/user-attachments/assets/66294992-d465-43f1-a5e9-c067e0addbe5)
-
-Made with ❤️ by [SharadJ19](https://github.com/SharadJ19)
+<p align="center">
+  🧠 Made with Markdown, Mongo, and midnight coffee ☕
+</p>
